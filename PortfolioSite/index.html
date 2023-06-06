@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax.libs/normalize/7.0.0/normalize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous">
+
+    <!-- update with own fonts if you want -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+COde+Pro:400,900|Source+Sans+Pro:300,900&display=swap">
+
+
+
+    <link rel="stylesheet" href="/css/styles.css">
+
+
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <!-- <img src="./img/logo.jpg" alt=""> -->
+        </div>
+
+        <button class="nav-toggle" aria-label="toggle navigation">
+            <span class="hamburger"></span>
+
+        </button>
+        <nav class="nav">
+            <ul class="nav__list">
+                <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
+                <li class="nav__item"><a href="#services" class="nav__link">My Services</a></li>
+                <li class="nav__item"><a href="#about" class="nav__link">About me</a></li>
+                <li class="nav__item"><a href="#work" class="nav__link">Work</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- introduction -->
+    <section class="intro" id="home">
+        <h1 class="section__title section__title--intro">
+            Hi I am <strong>Kelly Henderson</strong>
+        </h1>
+        <p class="section__subtitle section__subtitle--intro">full-stack developer</p>
+        <img src="./img/profile.jpg" alt="a picture of you" class="intro__img">
+    </section>
+
+    <!-- My services -->
+    <section class="my-services" id="services">
+        <h2 class="section__title section__title--servics">What I do</h2>
+        <div class="languages ">
+            <img  class="language" src="./img/css3.png" alt="" >
+            <img class="language"src="./img/html5.png" alt="" >
+            <img class="language"src="./img/javascript.png" alt="">
+            <img class="language"src="./img/git.png" alt="">
+            <img class="language"src="./img/nodejs.png" alt="">
+            <img class="language"src="./img/sql.png" alt="">
+            <img class="language"src="./img/postgresql.png" alt="">
+            <img class="language"src="./img/react.png" alt="">
+        </div>
+        <div class="services">
+            <div class="service">
+                <h3>Service</h3>
+                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse earum asperiores nemo nam eveniet atque nobis corrupti consequatur, laborum pariatur veniam? Doloremque voluptatibus, esse dolorum vero porro repellendus natus eius?</p>
+            </div>   <!--/service -->
+            <div class="service">
+                <h3>Service</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum cum et alias neque modi? Facilis architecto laudantium illo modi magni aperiam quisquam fugiat. Adipisci praesentium error impedit explicabo reprehenderit exercitationem.</p>
+            </div>   <!--/service -->
+            <div class="service">
+                <h3>Service</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur modi qui magni est enim doloribus minima perferendis impedit, voluptas exercitationem. Laudantium rem quos quasi quae iure aut, non sit eos.</p>
+            </div>   <!--/service -->
+        </div>
+        <a href="#work" class="btn">My Work</a>
+    </section>
+
+    <!-- About me -->
+    <section class="about-me" id="about">
+       
+        <h2 class="section__title section__title--about">Who I am</h2>
+        <p class="section__subtitle section__subtitle--about">Seasoned Communicator and Leader</p>
+
+        <div class="about-me__body">
+            <p>Highly motivated and versatile professional who recently completed a rigorous full-stack software development program, acquiring comprehensive technical skills and expertise. With a Speech-Language Pathologist (SLP) background and extensive experience in school administration, I am adept at leveraging a unique blend of educational expertise and software development knowledge to drive innovative solutions and optimize operational efficiency. Proven ability to effectively communicate and collaborate with diverse stakeholders, including students, educators, parents, and software development teams. Strong leadership qualities, problem-solving abilities, and a passion for making a positive impact where education and technology intersect. </p>
+
+            <p>fun stuff</p>
+            
+        </div>
+
+        <img src="./img/profile2.jpg" alt="pic of you" class="about-me__img">
+    </section>
+
+    <!-- My work -->
+
+    <section class="my-work" id="work">
+        <h2 class="section__title">My Work</h2>
+        <p class="section__subtitle section__subtitle-work">A selection of my range of work</p>
+    </section>
+    <div class="portfolio">
+        <!-- portfolio item 1 -->
+        <a href="https://github.com/Hendersonkelly/blackjack2021" class="portfolio__item">
+            <img src="./img/blkjckTable.png" alt=""class="portfolio__img">
+        </a>
+        <!-- portfolio item 2 -->
+        <a href="https://github.com/Hendersonkelly/frontEndProject" class="portfolio__item">
+            <img src="./img/pocjetSomm.png" alt=""class="portfolio__img">
+        </a>
+        <!-- portfolio item 3 -->
+        <a href="https://github.com/kathryntoney/back-end-project" class="portfolio__item">
+            <img src="./img/backend.png" alt=""class="portfolio__img">
+        </a>
+        <!-- portfolio item 4 -->
+        <a href="" class="portfolio__item">
+            <img src="" alt=""class="portfolio__img">
+        </a>
+        <!-- portfolio item 5 -->
+        <a href="" class="portfolio__item">
+            <img src="" alt=""class="portfolio__img">
+        </a>
+        <!-- portfolio item 6 -->
+        <a href="" class="portfolio__item">
+            <img src="" alt=""class="portfolio__img">
+        </a>
+    </div>
+
+    <section>
+        <!-- footer -->
+        <footer class="footer">
+            <a href="" class="footer__link">email</a>
+            <ul class="social-list">
+            <li class="social-list__item"> 
+                <a href="https://github.com/Hendersonkelly" class="social-list__link" >
+                    <i class="fa-brands fa-github"></i>
+                </a >
+                </li>
+            <li class="social-list__item"> 
+                <a href="https://www.linkedin.com/in/kelly-henderson-787491229/" class="social-list__link" >
+                    <i class="fa-brands fa-linkedin"></i>
+                </a >
+            </li>
+            <li class="social-list__item">
+                 <a href="" class="social-list__link" >
+
+                 </a >
+                </li>
+            <li class="social-list__item"> 
+                <a href="" class="social-list__link" >
+
+                </a >
+            </li>
+            </ul>
+        </footer >
+    </section>
+
+    <script src="https://kit.fontawesome.com/f60709c3f5.js" crossorigin="anonymous"></script>
+    <script src="/js/index.js"></script>
+</body>
+</html>
