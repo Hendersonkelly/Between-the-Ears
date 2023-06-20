@@ -83,7 +83,7 @@ let rides =[
         site: 'https://disneyland.disney.go.com/attractions/disneyland/chip-n-dales-gadget-coaster/'
     },
     {
-        name:'Davy Crockrtts Explorer Canoes',
+        name:'Davy Crocketts Explorer Canoes',
         movie:'Davy Crockett: King of the Wild Frontier',
         
         height: 0,
@@ -573,3 +573,5 @@ let rides =[
  
     
 ]
+
+export default rides

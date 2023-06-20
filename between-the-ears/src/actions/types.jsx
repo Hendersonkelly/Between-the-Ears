@@ -1,0 +1,4 @@
+
+
+export const LOAD_RIDES = "LOAD_RIDES"
+export const SEARCH_CHARACTERS = "SEARCH_CHARACTERS"
