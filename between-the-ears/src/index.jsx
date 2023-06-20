@@ -9,13 +9,17 @@ import {persistStore, persistReducer} from 'redux-persist'
 import storage from 'redux-persist/lib/storage'
 import {PersistGate} from 'redux-persist/integration/react'
 import './index.css';
+import 'semantic-ui-css/semantic.min.css'
 import App from './App';
-import Movies from './components/Movies';
+
+
 import MovieItem from './components/MovieItem';
 import Rides from './components/Rides';
 import BaseLayout from './components/layout/BaseLayout';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
- import rootReducer from './reducers/index'
+import rootReducer from './reducers/index'
+import Knowledge from './components/Knowledge';
+
 const persistConfig ={
   key:'root',
   storage: storage
@@ -36,7 +40,7 @@ ReactDOM.render(
           <BaseLayout>
           <Routes>
             <Route path="/" element={<App/>}/>
-            <Route path='/knowledge' element={<Movies/>}/>
+            <Route path='/knowledge' element={<Knowledge/>}/>
             <Route path='/movies' element={<MovieItem/>}/>
             <Route path='/rides' element={<Rides/>}/>
           </Routes>

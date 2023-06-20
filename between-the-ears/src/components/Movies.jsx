@@ -5,6 +5,8 @@ import { useSelector } from 'react-redux'
 import { useDispatch } from 'react-redux'
 import { searchCharacter } from '../actions/movieActions'
 import OpenAI from './OpenAI'
+
+
 const Movies = () => {
 
 const dispatch = useDispatch()
@@ -42,6 +44,7 @@ const handleSubmit = async (e) => {
 
   return (
     <>
+    
     <form onSubmit={handleSubmit}>
 
       <input type="text" value={character} placeholder='character name' onChange={(e)=>setCharacter(e.target.value)}/>
@@ -66,5 +69,3 @@ const handleSubmit = async (e) => {
 
 }
 export default Movies
-
-
