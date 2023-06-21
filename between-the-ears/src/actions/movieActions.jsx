@@ -6,3 +6,4 @@ export const searchCharacter =(data)=>{
         characters: data
     }
 }
+

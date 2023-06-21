@@ -1,12 +1,13 @@
 import { LOAD_RIDES } from "../actions/types"
+import { FILTER_RIDES } from "../actions/types";
 
 const ridesData = (state, action)=>{
     if(state === undefined){
-        console.log("inside initial state");
+        
         state = {
             rides: []
         }
-        console.log(state.rides);
+        
     }
 
 
@@ -18,7 +19,17 @@ const ridesData = (state, action)=>{
                 rides: action.rideList
             }
 
-        default:
+        case FILTER_RIDES:
+            console.log(action.description, "action.description");
+            const filteredRides = state.rides.filter((ride) => ride.description.includes(action.description));
+            console.log(filteredRides, "filtered rides");
+
+            return{
+                ...state,
+                rides: filteredRides
+            }
+        
+            default:
             return state
     }
     return state

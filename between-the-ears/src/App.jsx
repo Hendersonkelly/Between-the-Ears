@@ -16,8 +16,9 @@ const App = () => {
     </Header>
     <Menu borderless compact inverted>
       <Menu.Item active><Link to="/">Home</Link></Menu.Item>
-      <Menu.Item><Link to="/knowledge">Information</Link></Menu.Item>
-      <Menu.Item><Link to="/experiences">Experiences</Link></Menu.Item>
+      <Menu.Item><Link to="/knowledge">Movie Night</Link></Menu.Item>
+      <Menu.Item><Link to="/rides">Ride Preperation</Link></Menu.Item>
+      <Menu.Item><Link to="/experiences">Social Preperation</Link></Menu.Item>
     </Menu>
   </Container>
   <Container className="content">

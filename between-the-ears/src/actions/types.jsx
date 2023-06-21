@@ -2,3 +2,5 @@
 
 export const LOAD_RIDES = "LOAD_RIDES"
 export const SEARCH_CHARACTERS = "SEARCH_CHARACTERS"
+export const FILTER_RIDES = "FILTER_RIDES"
+export const ADD_TO_CART = "ADD_TO_CART"
