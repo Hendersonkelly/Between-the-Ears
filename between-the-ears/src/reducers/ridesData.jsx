@@ -1,5 +1,5 @@
-import { LOAD_RIDES } from "../actions/types"
-import { FILTER_RIDES } from "../actions/types";
+import { LOAD_RIDES } from "./types"
+import { FILTER_RIDES } from "./types";
 
 const ridesData = (state, action)=>{
     if(state === undefined){

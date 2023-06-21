@@ -19,6 +19,7 @@ import BaseLayout from './components/layout/BaseLayout';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import rootReducer from './reducers/index'
 import Knowledge from './components/Knowledge';
+import Experiences from './components/Experiences';
 
 const persistConfig ={
   key:'root',
@@ -43,6 +44,8 @@ ReactDOM.render(
             <Route path='/knowledge' element={<Knowledge/>}/>
             <Route path='/movies' element={<MovieItem/>}/>
             <Route path='/rides' element={<Rides/>}/>
+            <Route path='/experiences' element={<Experiences/>}/>
+
           </Routes>
           </BaseLayout>
         </Router>

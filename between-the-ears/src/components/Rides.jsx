@@ -50,7 +50,7 @@ setFilter(e.currentTarget.textContent)
     <Dropdown text="Filter By Type">
       
     <Dropdown.Menu>
-    
+      <Dropdown.Item text='All' icon=''onClick={()=>dispatch(loadRides(data))}/>
       <Dropdown.Item text='dark' icon='eye slash outline' onClick={handleClick} />
       <Dropdown.Item text='loud' icon='volume up' onClick={handleClick}/>
       <Dropdown.Item text='scary' icon='frown outline'onClick={handleClick} />
@@ -60,6 +60,7 @@ setFilter(e.currentTarget.textContent)
       <Dropdown.Item text='thrill' icon='heartbeat'onClick={handleClick}/>
       <Dropdown.Item text='small drops' icon='angle down'onClick={handleClick}/>
       <Dropdown.Item text='Big drops' icon='angle double down'onClick={handleClick}/>
+      
       
     </Dropdown.Menu>
   </Dropdown>

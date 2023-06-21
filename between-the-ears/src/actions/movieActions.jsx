@@ -1,4 +1,4 @@
-import { SEARCH_CHARACTERS } from "./types";
+import { SEARCH_CHARACTERS } from "../reducers/types";
 
 export const searchCharacter =(data)=>{
     return{

@@ -1,5 +1,5 @@
-import { LOAD_RIDES } from "./types";
-import { FILTER_RIDES } from "./types";
+import { LOAD_RIDES } from "../reducers/types";
+import { FILTER_RIDES } from "../reducers/types";
 
 export const loadRides =(data)=>{
     

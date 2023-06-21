@@ -1,4 +1,4 @@
-import { SEARCH_CHARACTERS }  from "../actions/types";
+import { SEARCH_CHARACTERS }  from "./types";
 
 const movieReducer = (state, action)=>{
     if(state === undefined){
