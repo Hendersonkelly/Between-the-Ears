@@ -1,0 +1,90 @@
+/*colors 
+  #84a59d-dk-green
+  #d0dcd9 lt grn
+  #f28482 md pink
+  #f8ad9d peach pink
+  #84a59d purple pink
+  #f5cac3 lt  lt pink
+  #f7ede2 milk
+  #ffdab9 peach
+  #f6bd60 org-yellow
+
+*/
+body{
+    background-color:#84A59D ;
+    color:#5c1a39
+}
+.ui.segment{
+    background-color:#84A59D;
+    color:#5c1a39;
+   
+   
+}
+
+.ui.menu{
+    background-color: #f5cac3;
+  
+}
+.ui.menu.item:hover{
+    background-color: #f8ad9d 
+
+}
+.link{
+    color:#5c1a39
+}
+
+.link:hover{
+    color:#84A59D
+}
+
+
+.ui.container{
+    background-image: url('../assets/img/homepageCrop.jpg');
+    height: 30em;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+     align-items: center;
+     display: flex;
+    justify-content: center;
+   color:#892755 !important ;
+   border-radius: 1%;
+}
+
+ .ui.card{
+    opacity: 0.8;
+    
+    background-color: #f5cac3;
+    color:#5c1a39;
+    text-align: center;
+    
+    font-size: 1.5em;
+     
+} 
+
+.ui.item{
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+.ui.button{
+    color:#5c1a39;
+    background-color: #f5cac3; 
+  
+}
+
+.ui.button:hover{
+    
+    color:#84A59D;
+    background-color: #f5cac3;
+    
+}
+.ui.header{
+    color:#5c1a39; 
+    font-weight: bold;
+}
+
+.buttons{
+    text-align: center;
+}
+

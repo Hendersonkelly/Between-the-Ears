@@ -1,7 +1,20 @@
 body {
     -webkit-font-smoothing: antialiased;
     -moz-font-smoothing: grayscale;
+    background-color: #f28482;
+    /* background-image: url('../assets/img/homepageCrop.jpg') ; */
+  color:#43072f
+  } 
+  .link{
+    color:#43072f
   }
+  
+ 
+ img{
+  border-radius: 1em;
+  
+  
+ }
   
   @media only screen and (min-width: 768px) {
     .ui.container {
@@ -10,47 +23,59 @@ body {
     }
   
     nav.ui.container .ui.header {
-      float: left;
+      /* float: left; */
       margin-top: 12px;
+     
+     
     }
   
-    nav.ui.container .ui.inverted.compact.menu {
-      float: right;
+    nav.ui.container .ui.compact.menu {
+      
+      background-color: #f28482;
+      border: #f28482;
+     
+     
     }
   }
   
-  .ui.inverted.vertical.center.aligned.segment {
-    padding-top: 36px;
+  .ui.vertical.center.aligned.segment {
+    padding-top: 1px;
+    
+    
+   
   }
   
-  nav.ui.container .ui.inverted.compact.menu {
-    background-color: rgb(51, 51, 51);
+  nav.ui.container .ui.compact.menu {
+    background-color: #f28482 md pink
+    
   }
   
-  nav.ui.container .ui.inverted.compact.menu .item {
+  nav.ui.container .ui.compact.menu .item {
     padding-bottom: 0;
   }
   
-  nav.ui.container .ui.inverted.compact.menu .item {
+  nav.ui.container .ui.compact.menu .item {
     font-size: 16px;
-    padding-left: 0px;
+    /* padding-left: 0px;
     padding-right: 0px;
     padding-bottom: 14px;
     margin-left: 16px;
     margin-right: 16px;
-    border-radius: 0;
+    border-radius: 0; */
   }
   
-  nav.ui.container .ui.inverted.compact.menu .active.item {
+  nav.ui.container .ui.compact.menu .active.item {
     background-color: inherit;
     border-bottom-color: white;
     border-bottom-style: solid;
     border-bottom-width: 2px;
   }
   
-  .ui.inverted.vertical.segment {
+  .ui.vertical.segment {
     height: 100vh;
-    background-color: rgb(51, 51, 51);
+    background-color:#f28482 md pink;
+    
+    
   }
   
   .ui.content.container {
@@ -61,6 +86,7 @@ body {
     left: 0;
     right: 0;
     margin: auto;
+    
   }
   
   .ui.content.container h1.header {
@@ -74,7 +100,7 @@ body {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   }
   
-  .ui.inverted.vertical.segment footer.ui.segment {
+  .ui.vertical.segment footer.ui.segment {
     height: 80px;
     width: 100%;
     position: absolute;
@@ -82,6 +108,6 @@ body {
     color: gray;
   }
   
-  .ui.inverted.vertical.segment footer.ui.segment a {
-    color: white;
+  .ui.vertical.segment footer.ui.segment a {
+    color:#43072f;
   }

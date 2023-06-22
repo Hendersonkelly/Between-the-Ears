@@ -9,11 +9,11 @@ import {persistStore, persistReducer} from 'redux-persist'
 import storage from 'redux-persist/lib/storage'
 import {PersistGate} from 'redux-persist/integration/react'
 import './index.css';
-import 'semantic-ui-css/semantic.min.css'
+// import 'semantic-ui-css/semantic.min.css'
 import App from './App';
 
 
-import MovieItem from './components/MovieItem';
+import Movies from './components/Movies';
 import Rides from './components/Rides';
 import BaseLayout from './components/layout/BaseLayout';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
@@ -42,7 +42,7 @@ ReactDOM.render(
           <Routes>
             <Route path="/" element={<App/>}/>
             <Route path='/knowledge' element={<Knowledge/>}/>
-            <Route path='/movies' element={<MovieItem/>}/>
+            <Route path='/movies' element={<Movies/>}/>
             <Route path='/rides' element={<Rides/>}/>
             <Route path='/experiences' element={<Experiences/>}/>
 

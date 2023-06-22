@@ -5,7 +5,7 @@ let rides =[
         height: 0,
         description: ["dark", "loud", "slow"],
         summary:"Take a topsy-turvy trip into the nonsensical world of Disney’s Alice in Wonderland aboard an oversized caterpillar.",
-        image: "https://mickeyblog.com/wp-content/uploads/2023/06/Alice-in-Wonderland-Disneyland-720x340.png" ,
+        image: "https://cdn1.parksmedia.wdprapps.disney.com/resize/mwImage/1/1600/900/75/dam/wdpro-assets/dlr/parks-and-tickets/attractions/disneyland/alice-in-wonderland/alice-in-wonderland-00.jpg?1686929095402" ,
         video: "https://www.youtube.com/watch?v=nbud4-dIan8",
         park: "Disneyland",
         site: 'https://disneyland.disney.go.com/attractions/disneyland/alice-in-wonderland/'
@@ -19,7 +19,7 @@ let rides =[
         height:0,
         description: ['spinninig'],
         summary:'Pilot your very own rocket ship high in the sky amid a gleaming constellation of orbiting planets.',
-        image:'https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0a/b4/ef/b8/astro-orbiter-disneyland.jpg?w=1200&h=1200&s=1',
+        image:'https://cdn1.parksmedia.wdprapps.disney.com/resize/mwImage/1/1600/900/75/dam/wdpro-assets/dlr/parks-and-tickets/attractions/disneyland/astro-orbitor/astro-orbitor-00.jpg?1677891895488',
         video: 'https://www.youtube.com/watch?v=vehwOWGKGYw',
         park:'Disneyland',
         site: 'https://disneyland.disney.go.com/attractions/disneyland/astro-orbitor/'
@@ -30,7 +30,7 @@ let rides =[
         height: 32,
         description: ['loud', 'slow'],
         summary:'Put the pedal to the metal on an unforgettable road trip along a miniature motorway.',
-        image:'https://dvcshop.com/wp-content/uploads/2022/02/Autotopia-e1645947466608.jpg',
+        image:'https://cdn1.parksmedia.wdprapps.disney.com/resize/mwImage/1/1600/900/75/dam/wdpro-assets/dlr/parks-and-tickets/attractions/disneyland/autopia/autopia-09.jpg?1680908963355',
         video:'https://www.youtube.com/watch?v=goPBcyNc_2Y',
         park:'Disneyland',
         site: 'https://disneyland.disney.go.com/attractions/disneyland/autopia/'
@@ -41,7 +41,7 @@ let rides =[
         height:40,
         description: ["small drops", " thrill", 'dark', "loud"],
         summary:'Streak through a haunted gold mine aboard a speeding train on this thrilling coaster-style ride',
-        image:'https://www.ocregister.com/wp-content/uploads/migration/ntn/ntnftc-b88491098z.120150825103919000gb5bh99b.10.jpg?w=620',
+        image:'https://cdn1.parksmedia.wdprapps.disney.com/resize/mwImage/1/1600/900/75/dam/disneyland/attractions/disneyland/big-thunder-mountain-railroad/big-thunder-guests-16x9.jpg?1676429908878',
         video:'https://www.youtube.com/watch?v=1Csw9vCqvbk',
         park:'Disneyland',
         site: 'https://disneyland.disney.go.com/attractions/disneyland/big-thunder-mountain-railroad/'
@@ -53,7 +53,7 @@ let rides =[
         height:0,
         description: ['slow','spinning', 'dark', 'loud '],
         summary:'Calling all Space Rangers! Take aim and fire your laser to defeat Zurg during a thrilling space battle.',
-        image:'https://myyearwiththemouse.files.wordpress.com/2011/04/buzz-9.jpg',
+        image:'https://cdn1.parksmedia.wdprapps.disney.com/resize/mwImage/1/1600/900/75/dam/wdpro-assets/dlr/parks-and-tickets/attractions/disneyland/buzz-lightyear-astro-blaster/buzz-lightyear-astro-blasters-00.jpg?1679674326302',
         video:'https://www.youtube.com/watch?v=2tT6ZZPbuHQ',
         park:'Disneyland',
         site: 'https://disneyland.disney.go.com/attractions/disneyland/buzz-lightyear-astro-blasters/'
@@ -144,7 +144,7 @@ let rides =[
     },
     {
         name:'Jungle Cruise',
-        movie:'Jungle',
+        movie:'Jungle Cruise',
         
         height:0,
         description: ["loud", "slow", "water"],

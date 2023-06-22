@@ -1,8 +1,8 @@
 import React, {useState} from 'react'
-
+import '../css/pages.css'
 
 import Header from './Header'
-import Movies from './Movies'
+import { Button } from 'semantic-ui-react'
 
 
 
@@ -12,8 +12,9 @@ const Knowledge = () => {
 return(
 <>
 <Header/>
-<Movies/>
 
+<Button href="/movies" size='massive'>Movie Night</Button>
+<Button href="/rides" size='massive'>Ride Prep</Button>
     
     </>
 

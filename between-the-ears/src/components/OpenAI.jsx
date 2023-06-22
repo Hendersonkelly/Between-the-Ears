@@ -3,7 +3,7 @@ import dotenv from 'dotenv';
 
 import { Button } from 'semantic-ui-react';
 import { useDispatch } from 'react-redux';
-import { addToCart } from '../actions/cartActions';
+
 import PdfGenerator from './PdfGenerator';
 import { PDFViewer,PDFDownloadLink, Document, Page   } from '@react-pdf/renderer';
 const { Configuration, OpenAIApi } = require("openai");
@@ -59,18 +59,22 @@ const dispatch = useDispatch()
 
   return (
     <>
+
       <div>
-        <button on onClick={handleSubmit}>Get recipes</button>
+      <Button onClick={handleSubmit} size='massive'>Recipes</Button>
+       
       </div>
       {apiResponse && (
         <div
           style={{
             display: "flex",
-            justifyContent: "center",
+            justifyContent: "right"
+          
           }}
         >
-          <pre>
-            <strong>API response:</strong>
+          <pre 
+          style={{fontFamily: "sans-serif"}}>
+            <strong>Recipes:</strong>
             {apiResponse}
           </pre>
           
@@ -89,12 +93,7 @@ const dispatch = useDispatch()
     </PDFDownloadLink>
   </div>
 
-        {/* <div>
-        <PDFViewer>
-
-    <PdfGenerator apiResponse={apiResponse}/>
-    </PDFViewer>
-    </div> */}
+       
     </>
   );
 };

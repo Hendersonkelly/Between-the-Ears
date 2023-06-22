@@ -4,7 +4,7 @@ import {useDispatch, useSelector} from 'react-redux'
 import { filterRides, loadRides } from '../actions/rideActions'
 import Header from './Header'
 
-import { Dropdown, Input } from 'semantic-ui-react'
+import { Dropdown, Card, Image, CardContent} from 'semantic-ui-react'
 
 
 const Rides = () => {
@@ -69,13 +69,45 @@ setFilter(e.currentTarget.textContent)
 
 
 
-    <ul>
+<Card.Group itemsPerRow={6}>
 
     {rides.map(ride=>{
-      return (<li>{ride.name}</li>
+      return (
+        <Card>
+        <Image src={ride.image} wrapped ui={false} />
+        <Card.Content>
+          <Card.Header>{ride.name}</Card.Header>
+        <Card.Meta>
+          <strong>Park:</strong> {ride.park}
+          <p><strong>Height: </strong> {ride.height}</p>
+        </Card.Meta>
+          </Card.Content>
+          <CardContent>
+          <Card.Description>
+          <strong>Summary:</strong> {ride.summary}
+          </Card.Description>
+            <div>
+            
+            
+            <strong>Movie:</strong> {ride.movie}
+            </div>
+          
+          <div>
+          <strong>Category:  </strong>
+          {ride.description.map(description=>{
+            return "\n \n" + description + ",\n \n"
+          })}
+          </div>
+          
+       
+          <strong>POV video:</strong> 
+          <a href={ride.video}> Follow Link</a> 
+        </CardContent>
+      </Card>
       )
     })}
-    </ul>
+    
+    </Card.Group>
     </>
   )
 }

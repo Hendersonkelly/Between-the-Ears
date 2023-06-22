@@ -1,0 +1,16 @@
+body{
+   
+        -webkit-font-smoothing: antialiased;
+        -moz-font-smoothing: grayscale;
+      
+}
+
+.item {
+    font-size: 16px;
+    padding-left: 0px;
+    padding-right: 0px;
+    padding-bottom: 14px;
+    margin-left: 16px;
+    margin-right: 16px;
+    border-radius: 0;
+  }

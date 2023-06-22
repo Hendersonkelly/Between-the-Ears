@@ -2,47 +2,60 @@ import React from 'react'
 import {Link} from 'react-router-dom'
 
 import "semantic-ui-css/semantic.min.css";
-import "../src/css/homepage.css"
-import { Button, Container, Header, Menu, Segment } from "semantic-ui-react";
+import "../src/css/app.css"
+// import "../src/css/pages.css"
+import { Button, Container, Header,Item, Menu, Segment, Image, Divider, Card, ItemDescription } from "semantic-ui-react";
 
 const App = () => {
   return (
     <>
-    <div className="App">
-<Segment inverted vertical textAlign="center">
-  <Container as="nav">
-    <Header inverted as="h1">
-     Between the Ears
-    </Header>
-    <Menu borderless compact inverted>
-      <Menu.Item active><Link to="/">Home</Link></Menu.Item>
-      <Menu.Item><Link to="/knowledge">Movie Night</Link></Menu.Item>
-      <Menu.Item><Link to="/rides">Ride Preperation</Link></Menu.Item>
-      <Menu.Item><Link to="/experiences">Social Preperation</Link></Menu.Item>
-    </Menu>
-  </Container>
-  <Container className="content">
-    <Header inverted as="h1">
-      Cover your page.
-    </Header>
-    <p>
-      Cover is a one-page template for building simple and beautiful
-      home pages. Download, edit the text, and add your own fullscreen
-      background photo to make it your own.
+      <Segment.Group  stacked>
+        <Segment>
+          <Menu>
+            <Menu.Item active><Link className='link' to="/">Home</Link></Menu.Item>
+            <Menu.Item><Link  className='link' to="/knowledge">Movie Night</Link></Menu.Item>
+            <Menu.Item><Link className='link' to="/rides">Rides</Link></Menu.Item>
+            <Menu.Item><Link className='link' to="/experiences">Social Skills</Link></Menu.Item>
+         </Menu>
+         
+        </Segment>
+        <Segment >
+        <Container fluid  >
+          <Card>
+
+          <Header  >
+            Between the Ears
+          </Header>
+          <ItemDescription>
+              Disney Prep with the Nuerodiverse In Mind
+          </ItemDescription>
+          </Card>
+        
+
+        
+        </Container>
+        
+         
+        </Segment>
+        <Segment >
+        <p style={{fontSize:"1.5em"}}>
+      Between the Ears is a resource guide supporting preparations for a Disney experience. You can find support for building knowledge about the characters that you could meet, information about the rides including a pointy of view video to support anticipation concerns as well as social preparation resources for changes to schedules, waiting in lines, and going on a plane. Disney can only be the happiest place on Earth when everyone has the access to experience it well. Enjoy!
     </p>
+    <div className='buttons'>
+      
     <Button href="/knowledge" size="huge">Knowledge</Button>
     <Button href="/experiences"size="huge">Experiences</Button>
-  </Container>
-  <Segment inverted vertical as="footer">
-    Cover template for <a href="http://semantic-ui.com">Semantic-UI</a>,
-    by{" "}
-    <a href="https://github.com/semantic-ui-forest">
-      @Semantic-UI-Forest
-    </a>
-    .
-  </Segment>
-</Segment>
-</div>
+    </div>
+        </Segment>
+        <Segment>
+          footer
+        </Segment>
+
+
+
+      </Segment.Group>
+    
+
     </>
   )
 }
