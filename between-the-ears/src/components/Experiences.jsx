@@ -1,13 +1,13 @@
 import React from 'react'
-import Header from './Header'
+import Top from './Header'
 import data from '../assets/resources'
 import {useState, useEffect} from 'react'
 import {useDispatch, useSelector} from 'react-redux'
-import { Dropdown, Card, Image, CardContent } from 'semantic-ui-react'
+import { Dropdown, Card, Image, CardContent, Header, Container, Segment } from 'semantic-ui-react'
 import { loadResources } from '../actions/experienceAction'
 import { filterResources } from '../actions/experienceAction'
-
-
+import Footer from './Footer'
+import "../css/experiences.css"
 const Experiences = () => {
 const dispatch = useDispatch()
 const resources = useSelector(state=>state.resources.resources)
@@ -35,25 +35,34 @@ const handleClick = (e) => {
 }
   return (
     <>
-    <Header/>
+    <Top/>
+    <div style={{backgroundColor:"#abcd84", opacity:".8", marginTop:"5em"}}>
+    <Header textAlign='center' as="h1">Prepare for Different </Header>
+  <Container   >
 
+      Vacation for many are a chance to get out of your mundane routine and experience a new adventure. We know that for so many that idea can fell  unpredicatable, overwhelming, and even scary. This page provides a compilation of social stories, songs, and read-aloud books that can aid that process. The more exposure to a concept or idea someone has, reduces the chance they will find the concept so new or different that they experience an overwhelming response. It also allows us to use vocabulary and practice skills while someone feels comfortable and safe instead of waiting until it is harder to manage emotions and actions. You can filter by category like waiting because you can bet waiting will be hard in the excitement. I mean who wants to wait! you are at Disney!
+
+    
+    
+  </Container>
+  </div>
     <div>
     <div style={{
-            display: 'block', width: 700, padding: 30
+            display: 'block', width: 300, paddingBottom: 20, backgroundColor:"#abcd84", opacity:".8", marginTop:"9em", marginBottom:"1em", textAlign:"center" ,boxShadow: "0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)", opacity:".8"
     }}>
     <br/>
     
-    <Dropdown text="Filter By Category">
+    <Dropdown upward text="Filter By Category">
       
     <Dropdown.Menu>
-      <Dropdown.Item text='All' icon='list layout'onClick={()=>dispatch(loadResources(data))}/>
-      <Dropdown.Item text='plane' icon='plane' onClick={handleClick} />
-      <Dropdown.Item text='disney' icon='font Awesome' onClick={handleClick}/>
-      <Dropdown.Item text='change' icon='delete calendar'onClick={handleClick} />
-      <Dropdown.Item text='noise' icon='volume up' onClick={handleClick} />
-      <Dropdown.Item text='restaurant' icon='food' onClick={handleClick}/>
-      <Dropdown.Item text='hotel' icon='hotel'onClick={handleClick}/>
-      <Dropdown.Item text='waiting' icon='wait'onClick={handleClick}/>
+      <Dropdown.Item className='drop' text='All' icon='list layout'onClick={()=>dispatch(loadResources(data))}/>
+      <Dropdown.Item className='drop' text='plane' icon='plane' onClick={handleClick} />
+      <Dropdown.Item className='drop' text='disney' icon='font Awesome' onClick={handleClick}/>
+      <Dropdown.Item className='drop' text='change' icon='delete calendar'onClick={handleClick} />
+      <Dropdown.Item className='drop' text='noise' icon='volume up' onClick={handleClick} />
+      <Dropdown.Item className='drop' text='restaurant' icon='food' onClick={handleClick}/>
+      <Dropdown.Item className='drop' text='hotel' icon='hotel'onClick={handleClick}/>
+      <Dropdown.Item className='drop' text='waiting' icon='wait'onClick={handleClick}/>
     
       
       
@@ -71,8 +80,8 @@ const handleClick = (e) => {
          <Card>
           <CardContent>
                <iframe
-              width="560"
-              height="315"
+              width="350"
+              height="300"
               src= {`https://www.youtube.com/embed/${resource.link}?autoplay=0`} // Add ?autoplay=0 to the video URL
               title="YouTube Video"
               frameBorder="0"
@@ -96,6 +105,7 @@ const handleClick = (e) => {
     })}
     </Card.Group>
 
+   
    
   
     

@@ -1,0 +1,27 @@
+body{
+    background-image: url('../assets/img/background.jpg');
+    background-size: cover;
+    
+ }
+
+ ui.card{
+    background-color:#f4efee !important ;
+    font-size: 1.1em;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+ margin: 1em;
+ }
+
+ ui.container{
+    background-color:#abcd84 ;
+ }
+ 
+.drop{
+    background-color:#abcd84;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-color: #abcd84;
+}
+.drop:hover{
+
+    background-color:#eb8e97 !important;
+    border-color:#eb8e97;
+}

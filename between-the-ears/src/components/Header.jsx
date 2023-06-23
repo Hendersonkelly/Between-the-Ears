@@ -1,25 +1,19 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import "../css/pages.css"
+import { Menu } from 'semantic-ui-react'
 
-const Header = () => {
+
+const Top = () => {
   return (
-    <div class="ui menu">
-  <div class="header item">
-  <Link to="/">Home</Link>
-  </div>
-  <a class="item">
-  <Link to="/knowledge">Movie Night</Link>
-  </a>
-  <a class="item">
-  <Link to="/rides">Ride Preperation</Link>
-  </a>
-  <a class="item">
-  <Link to="/experiences">Experiences</Link>
-  </a>
-  
-</div>
+    <Menu>
+    <Menu.Item active><Link className='link page' to="/">Home</Link></Menu.Item>
+    <Menu.Item><Link  className='link page' to="/movies">Movie Night</Link></Menu.Item>
+    <Menu.Item><Link className='link page' to="/rides">Rides</Link></Menu.Item>
+    <Menu.Item><Link className='link page' to="/experiences">Social Skills</Link></Menu.Item>
+    <Menu.Item  position='right'><Link className='link name' to="/">Between the Ears</Link></Menu.Item>
+   
+ </Menu>
   )
 }
 
-export default Header
+export default Top

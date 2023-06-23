@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
 import dotenv from 'dotenv';
 
-import { Button } from 'semantic-ui-react';
+import { Button, Loader, Grid, Container,Image } from 'semantic-ui-react';
 import { useDispatch } from 'react-redux';
 
 import PdfGenerator from './PdfGenerator';
-import { PDFViewer,PDFDownloadLink, Document, Page   } from '@react-pdf/renderer';
+import { PDFDownloadLink   } from '@react-pdf/renderer';
 const { Configuration, OpenAIApi } = require("openai");
 dotenv.config();
 
@@ -51,7 +51,11 @@ const dispatch = useDispatch()
       //console.log(e);
       setApiResponse("Something is going wrong, Please try again.");
     }
-    setLoading(false);
+   
+      
+      setLoading(false);
+    
+    
   };
 
   
@@ -59,41 +63,62 @@ const dispatch = useDispatch()
 
   return (
     <>
+  <Grid>
+    <Grid.Row>
 
-      <div>
-      <Button onClick={handleSubmit} size='massive'>Recipes</Button>
-       
-      </div>
-      {apiResponse && (
-        <div
-          style={{
-            display: "flex",
-            justifyContent: "right"
-          
-          }}
+<Container  >
+ 
+    <Button style={{color:"black", margin:"3em"}} onClick={handleSubmit} size='massive'>Get Recipes</Button>
+
+  
+  </Container>
+ 
+  <Container>
+  {loading ? (
+       <Loader active inline="centered" />
+     ):(<div> </div>)}
+ 
+    </Container>
+ </Grid.Row>
+
+
+    <Grid.Row>
+      <Container>
+         {apiResponse && (
+           <Container text>
+        
+           <Button size='massive'>
+          <PDFDownloadLink style={{color:"black"}} document={<PdfGenerator apiResponse={apiResponse}/>} fileName="recipe.pdf">
+           {({ blob, url, loading, error }) =>
+           loading ? 'Loading document...' : "Download a PDF"
+           }
+           </PDFDownloadLink>
+          </Button>   
+         
+              <div
+              style={{
+                 display:"block",
+               width:"62em",
+               backgroundColor:"#f4efee"
+              
+               }}
         >
           <pre 
           style={{fontFamily: "sans-serif"}}>
-            <strong>Recipes:</strong>
+            <strong> Recipes:</strong>
             {apiResponse}
           </pre>
           
         </div>
-        
+        </Container>
 
         
         )}
-        
-        
-        <div>
-    <PDFDownloadLink document={<PdfGenerator apiResponse={apiResponse}/>} fileName="recipe.pdf">
-      {({ blob, url, loading, error }) =>
-        loading ? 'Loading document...' : 'Download a PDF of this recipe'
-      }
-    </PDFDownloadLink>
-  </div>
+    
+  </Container>
 
-       
+    </Grid.Row>
+    </Grid>   
     </>
   );
 };
