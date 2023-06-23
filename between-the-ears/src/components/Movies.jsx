@@ -43,8 +43,8 @@ const handleSearch = async (e) => {
 
  <>
  <Top/>
- {/* <Segment > */}
- <div style={{backgroundColor:"#abcd84", opacity:".8"}}>
+ 
+ <div style={{backgroundColor:"#f4efee", opacity:".8"}}>
     <Header textAlign='center' as="h1">Plan a Movie Night </Header>
   <Container   >
 
@@ -54,38 +54,26 @@ const handleSearch = async (e) => {
     
   </Container>
   </div>
- {/* </Segment> */}
- {/* <Segment> */}
+<Grid  stackable> 
+    <Grid.Row>
+   
 
- 
- <Grid>
- <Grid.Row >
-<Container>
- 
-<div>
-<br/>
-<form onSubmit={handleSearch}>
+<form style={{marginTop:"2em"}} onSubmit={handleSearch}>
 <div class="ui action input">
-<input type="text" value={moviePrompt} placeholder='movie name'  fdprocessedid="xynnjj" onChange={(e)=>setMoviePrompt(e.target.value)}/>
+<input type="text" value={moviePrompt} placeholder='movie name'   onChange={(e)=>setMoviePrompt(e.target.value)}/>
 
-<button class="ui button" fdprocessedid="uyeeml">Search</button>
+<button class="ui button" size="huge" >Search</button>
 </div>
 
 </form>
 
 
 <br /> 
-</div>
-</Container>
-</Grid.Row>
-   
 
-  <Grid.Row>
+    </Grid.Row>
 
-     <Container style={{backgroundColor:"#abcd84", opacity:".8"}} fluid > 
-      
-      <Grid.Column  width={8} >
-        <Grid.Row >
+    <Grid.Column   width={5} >
+        
         <Card  >
           <Card.Content>
             
@@ -102,11 +90,16 @@ const handleSearch = async (e) => {
             </Card.Description>
            </Card.Content>
         </Card>
-        </Grid.Row>
+       
       </Grid.Column>   
-    <Grid.Column width={8}>
+
+
+      <Grid.Column width={8}>
      
       <Grid.Row>
+
+
+        
         
    <Container fluid>
 
@@ -115,14 +108,26 @@ const handleSearch = async (e) => {
      
       </Grid.Row>
     </Grid.Column>
-      
-     </Container>
-    
-  </Grid.Row>
-
-
+     
  </Grid>
-  {/* </Segment> */}
+
+ <Segment className='footer' style={{position:"fixed", bottom:"0", width:"100%", }}>
+        
+        
+
+        <Footer/>
+       
+      
+     
+          </Segment>
+
+    
+          
+
+ 
+ 
+   
+
   
   
 

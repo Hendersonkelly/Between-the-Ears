@@ -1,17 +1,35 @@
 
 
 body{
-    background-image: url('../assets/img/background.jpg');
-    background-size: cover;
+    background-image: url('../assets/img/landscape.jpg');
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center ;
+    background-color: #6d849d;
     
- }
+   
+    
+   
+}
 
+@media  (max-width: 576px)  {
+    .body{
+        background-size: 80em;
+        background-repeat: no-repeat;
+    }
+
+    .ui.card{
+        width:max-content
+    }
+    
+}
 
 
 .drop{
     background-color:#abcd84;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     border-color: #abcd84;
+    z-index: 100;
 }
 .drop:hover{
 
@@ -21,8 +39,15 @@ body{
 
 
 ui.card{
-    background-color:#abcd84 !important ;
+   
     font-size: 1.1em;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
  margin: 1em;
+ 
+
  }
+
+.z{
+    z-index: 100;
+}
+

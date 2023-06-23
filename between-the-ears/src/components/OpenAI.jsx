@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import dotenv from 'dotenv';
 
-import { Button, Loader, Grid, Container,Image } from 'semantic-ui-react';
+import { Button, Loader, Grid, Container,Modal, Icon } from 'semantic-ui-react';
 import { useDispatch } from 'react-redux';
 
 import PdfGenerator from './PdfGenerator';
@@ -14,7 +14,7 @@ dotenv.config();
 
 
 const OpenAI = ({prompt}) => {
- 
+  const [open, setOpen] = useState(false)
 const dispatch = useDispatch()
   const configuration = new Configuration({
     apiKey: process.env.REACT_APP_OPENAI_API_KEY,
@@ -28,6 +28,7 @@ const dispatch = useDispatch()
   const handleSubmit = async (e) => {
     e.preventDefault();
     setLoading(true);
+   
     try {
       const result = await openai.createCompletion({
         model: "text-davinci-003",
@@ -52,40 +53,41 @@ const dispatch = useDispatch()
       setApiResponse("Something is going wrong, Please try again.");
     }
    
-      
       setLoading(false);
     
     
   };
 
   
-
-
   return (
     <>
-  <Grid>
-    <Grid.Row>
+  <Grid stackable>
+   
 
-<Container  >
  
-    <Button style={{color:"black", margin:"3em"}} onClick={handleSubmit} size='massive'>Get Recipes</Button>
 
-  
-  </Container>
- 
-  <Container>
   {loading ? (
-       <Loader active inline="centered" />
-     ):(<div> </div>)}
- 
-    </Container>
- </Grid.Row>
-
-
-    <Grid.Row>
-      <Container>
-         {apiResponse && (
-           <Container text>
+       <Loader size='huge' inverted active inline="centered" />
+     ):(
+      <Modal
+  centered
+  size='large'
+  open={open}
+  onClose={() => setOpen(false)}
+  onOpen={() => setOpen(true)}
+  trigger={<Button style={{  color: "black", margin: "3em" }} onClick={handleSubmit} size='massive'>Get Recipes</Button>}
+  style={{
+    maxWidth: "1000px",
+    width: "90%",
+    overflowWrap: "anywhere",
+    boxSizing: "border-box",
+  }}
+    >
+      <Modal.Header>Recipes</Modal.Header>
+      <Modal.Content >
+        <Modal.Description>
+        {apiResponse && (
+          <div>
         
            <Button size='massive'>
           <PDFDownloadLink style={{color:"black"}} document={<PdfGenerator apiResponse={apiResponse}/>} fileName="recipe.pdf">
@@ -95,28 +97,41 @@ const dispatch = useDispatch()
            </PDFDownloadLink>
           </Button>   
          
-              <div
-              style={{
-                 display:"block",
-               width:"62em",
-               backgroundColor:"#f4efee"
               
-               }}
-        >
+        
           <pre 
-          style={{fontFamily: "sans-serif"}}>
-            <strong> Recipes:</strong>
+          style={{fontFamily: "sans-serif", whiteSpace:"break-spaces", boxSizing:"border-box"}}>
+            
             {apiResponse}
           </pre>
           
+        
+       
         </div>
-        </Container>
-
         
         )}
-    
-  </Container>
+        </Modal.Description>
+      </Modal.Content>
+      <Modal.Actions>
+        <Button primary onClick={() => setOpen(false)}>
+          close <Icon name='x' />
+        </Button>
+      </Modal.Actions>
+    </Modal>
 
+     )}
+
+
+ 
+
+    <Grid.Row>
+      <Grid.Column width={(12)}>
+
+     
+       
+    
+ 
+    </Grid.Column>
     </Grid.Row>
     </Grid>   
     </>

@@ -1,23 +1,30 @@
 
 body{
-    background-image: url('../assets/img/background.jpg');
-    background-size: cover;
-
+    background-image: url('../assets/img/landscape.jpg');
+    background-size:cover;
+    background-repeat: repeat;
+    background-position: center ;
+    background-color: #6d849d;
+   
    
     
    
 }
-.picture{
-    background-image: url('../assets/img/landscape.jpg');
-  background-size: cover;
-  height: 26.7em;
-    background-repeat: no-repeat;
-  background-position: center;
-     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-     border-radius: 1%;
-     margin-top: 2em;
-     opacity: .8;
+
+@media  (min-width: 576px)  {
+    .body{
+        background-size: 80em;
+        background-repeat: repeat;
+    }
+
+    .ui.card{
+        width:max-content
+    }
+    
 }
+
+
+
 
 .name{
     font-size: 1.5em;
@@ -59,24 +66,27 @@ body{
     justify-content: center;
 
 }
-.together{
+/* .together{
     background-color :#abcd84; 
     opacity: .8;
     height: 31em;
     margin-top: 2.5em;
     border-radius: 1%;
+} */
+.ui.grid{
+    opacity: .8;
+  justify-content: center;
+ 
 }
-
 .ui.card{
-    background-color :#abcd84; 
+   
     font-weight: bold;
     font-size: 1.5em;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     text-align: center;
-    margin-top: 2em;
-    width:25em;
-
-   opacity: .9;
+  
+    width: max-content;
+   opacity: .7;
    
 }
 .group{
@@ -112,12 +122,17 @@ body{
 
 
 .footer{
-    background-color: #6d849d;
-    height:6em;
-    margin-top: 2em;
+    background-color: #eb8e97;
+    
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     color: #f4efee;
     text-shadow: 2px 2px rgba(0, 0, 0, 0.2);
     font-size: 1em !important;
+    width: 100%;
+    text-align: center;
+    z-index: -1;
 
+}
+.ui.segment{
+    background-color: #eb8e97;
 }
