@@ -35,18 +35,18 @@ const handleClick = (e) => {
 setFilter(e.currentTarget.textContent)
 
 
-  
+
 
 }
   
   return (
     <>
     <Top/>
-    <div style={{backgroundColor:"#abcd84", opacity:".8", marginTop:"5em"}}>
-    <Header textAlign='center' as="h1">Prepare for the Rides </Header>
+    <div style={{backgroundColor:"#f4efee", opacity:".8"}}>
+    <Header textAlign='center' as="h1">Pepare for Rides </Header>
   <Container   >
 
-      Rides while fun for those who love a sense of surprise and anticipation, is not always a trait that everyone has. Disney has categorized its rides by differrent types so you know what rides can be a yes, a maybe, and a not yet. You can filter through the rides by category. Also as a part of each card you will see a link to a video. For our anticipation worriers, this link will allow someone to watch a first person point of view to support decision making as well as limiting surprises. 
+  Rides while fun for those who love a sense of surprise and anticipation, is not always a trait that everyone has. Disney has categorized its rides by differrent types so you know what rides can be a yes, a maybe, and a not yet. You can filter through the rides by category. Also as a part of each card you will see a link to a video. For our anticipation worriers, this link will allow someone to watch a first person point of view to support decision making as well as limiting surprises. 
 
     
     
@@ -83,7 +83,7 @@ setFilter(e.currentTarget.textContent)
 
     {rides.map(ride=>{
       return (
-    <div className= "z1"style={{margin:".6em", width:"20em"}}>
+    <div style={{margin:".6em", width:"20em"}}>
         <Card>
         <Image src={ride.image} wrapped ui={false} />
         <Card.Content>
@@ -117,7 +117,18 @@ setFilter(e.currentTarget.textContent)
     })}
     
     </Card.Group>
+    <Segment className='footer' style={{position:"fixed", bottom:"0", width:"100%", }}>
+        
+        
+
+        <Footer/>
+       
+      
+     
+          </Segment>
+
     
+          
     
     </>
   )

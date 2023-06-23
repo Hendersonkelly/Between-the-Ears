@@ -1,17 +1,5 @@
-body{
-    background-image: url('../assets/img/background.jpg');
-    background-size: cover;
-    
-    
- }
-
-.ui.segment{
-    background-image: url('../assets/img/background.jpg');
-    background-size: cover;
-}
-
 .ui.card{
-    background-color :#f4efee; 
+    /* background-color :#f4efee;  */
     background-size: cover;
     font-size: 1.1em;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -32,6 +20,8 @@ body{
 .ui.button{
     opacity: 1 !important;
   
+  
 
     
 }
+

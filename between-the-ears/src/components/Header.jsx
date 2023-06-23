@@ -5,7 +5,7 @@ import { Menu } from 'semantic-ui-react'
 
 const Top = () => {
   return (
-    <Menu>
+    <Menu stackable>
     <Menu.Item active><Link className='link page' to="/">Home</Link></Menu.Item>
     <Menu.Item><Link  className='link page' to="/movies">Movie Night</Link></Menu.Item>
     <Menu.Item><Link className='link page' to="/rides">Rides</Link></Menu.Item>
