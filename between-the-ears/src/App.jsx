@@ -29,7 +29,7 @@ const App = () => {
               <Card >
               <Card.Content>
                 <Card.Header>Between the Ears  </Card.Header>
-                <Card.Description><strong>  Disney Prep for the Nuerodiverse</strong></Card.Description>
+                <Card.Description><strong>  Disney Prep for the Neurodiverse</strong></Card.Description>
               </Card.Content>
               <Card.Content>
                 <Card.Description>
