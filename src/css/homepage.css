@@ -1,8 +1,8 @@
-body {
+/* body {
     -webkit-font-smoothing: antialiased;
     -moz-font-smoothing: grayscale;
     background-color: #f28482;
-    /* background-image: url('../assets/img/homepageCrop.jpg') ; */
+  
   color:#43072f
   } 
   .link{
@@ -23,7 +23,7 @@ body {
     }
   
     nav.ui.container .ui.header {
-      /* float: left; */
+     
       margin-top: 12px;
      
      
@@ -55,14 +55,14 @@ body {
   }
   
   nav.ui.container .ui.compact.menu .item {
-    font-size: 16px;
+    font-size: 16px; */
     /* padding-left: 0px;
     padding-right: 0px;
     padding-bottom: 14px;
     margin-left: 16px;
     margin-right: 16px;
     border-radius: 0; */
-  }
+  /* }
   
   nav.ui.container .ui.compact.menu .active.item {
     background-color: inherit;
@@ -110,4 +110,4 @@ body {
   
   .ui.vertical.segment footer.ui.segment a {
     color:#43072f;
-  }
+  } */
