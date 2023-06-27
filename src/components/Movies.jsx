@@ -9,9 +9,9 @@ import { Grid, Icon, Image, Card, Container, Segment, Header, Sticky} from 'sema
 import { addCharacters } from '../actions/movieActions'
 import Top from './Header'
 import Footer from './Footer'
-
+require('dotenv').config()
 const Movies = () => {
-
+let movieKey= process.env.REACT_APP_OMDB_API_KEY
 const dispatch = useDispatch()
 const [errorMessage, setErrorMessage] = useState("")
 const characters = useSelector(state=> state.characters.characters)
@@ -24,7 +24,7 @@ const [moviePrompt, setMoviePrompt] = useState("")
 const handleSearch = async (e) => {
   e.preventDefault()
 
-  let results =  await fetch(`http://www.omdbapi.com/?t=${moviePrompt}&apikey=be14cd78`)
+  let results =  await fetch(`http://www.omdbapi.com/?t=${moviePrompt}&apikey=${movieKey}`)
   let data = await results.json()
   console.log(data, "inside movie api");
   dispatch(addCharacters(data))
