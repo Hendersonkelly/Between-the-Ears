@@ -24,7 +24,7 @@ const [moviePrompt, setMoviePrompt] = useState("")
 const handleSearch = async (e) => {
   e.preventDefault()
 
-  let results =  await fetch(`https://www.omdbapi.com/?t=${moviePrompt}&apikey=${movieKey}`)
+  let results =  await fetch(`/api/?t=${moviePrompt}&apikey=${movieKey}`)
   let data = await results.json()
   console.log(data, "inside movie api");
   dispatch(addCharacters(data))
