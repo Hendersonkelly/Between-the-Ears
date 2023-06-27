@@ -69,7 +69,7 @@ setFilter(e.currentTarget.textContent)
       <Dropdown.Item className='drop' text='slow' icon='clock outline'onClick={handleClick}/>
       <Dropdown.Item className='drop' text='thrill' icon='heartbeat'onClick={handleClick}/>
       <Dropdown.Item className='drop' text='small drops' icon='angle down'onClick={handleClick}/>
-      <Dropdown.Item className='drop' text='Big drops' icon='angle double down'onClick={handleClick}/>
+      <Dropdown.Item className='drop' text='big drops' icon='angle double down'onClick={handleClick}/>
       
       
     </Dropdown.Menu>
