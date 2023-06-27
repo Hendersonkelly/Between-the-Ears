@@ -44,7 +44,7 @@ const handleClick = (e) => {
     <Header textAlign='center' as="h1">Prepare for Different </Header>
 
 
-      Vacation for many are a chance to get out of your mundane routine and experience a new adventure. We know that for so many that idea can fell  unpredicatable, overwhelming, and even scary. This page provides a compilation of social stories, songs, and read-aloud books that can aid that process. The more exposure to a concept or idea someone has, reduces the chance they will find the concept so new or different that they experience an overwhelming response. It also allows us to use vocabulary and practice skills while someone feels comfortable and safe instead of waiting until it is harder to manage emotions and actions. You can filter by category like waiting because you can bet waiting will be hard in the excitement. I mean who wants to wait! you are at Disney!
+      Vacation for many are a chance to get out of your mundane routine and experience a new adventure. We know that for so many that idea can fell  unpredicatable, overwhelming, and even scary. This page provides a compilation of social stories, songs, and read-aloud books that can aid that process. The more exposure to a concept or idea someone has, reduces the chance they will find the concept so new or different that they experience an overwhelming response. It also allows us to use vocabulary and practice skills while someone feels comfortable and safe instead of waiting until it is harder to manage emotions and actions. You can filter by category like waiting because you can bet waiting will be hard in the excitement. I mean who wants to wait! You are at Disney!
 
     </Grid.Row>
 
