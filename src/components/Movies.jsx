@@ -24,14 +24,22 @@ const [moviePrompt, setMoviePrompt] = useState("")
 const handleSearch = async (e) => {
   e.preventDefault()
 
-  let results =  await fetch(`https://between-the-ears.netlify.app/api/?t=${moviePrompt}&apikey=${movieKey}`)
-  let data = await results.json()
-  console.log(data, "inside movie api");
-  dispatch(addCharacters(data))
-  if(data.error === "Movie not found!"){
-    setErrorMessage("Whoops something went wrong. Make sure you spelled your movie correctly and try again")
-  }
+  const options = {
+    method: 'GET',
+    headers: {
+      accept: 'application/json',
+      Authorization: 'Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiIwMGVlODkxMjFjOTRmNGI4M2E2NzQ5NzcwNzVlMGVmNCIsInN1YiI6IjY0OWMzYTY2YWY1OGNiMDExY2YyMWIyZSIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.gnQiMC0L3vK6_vRmtaq6tg2a5iigarcyNVHjYJifZrg'
+    }
+  };
   
+let response = await  fetch(`https://api.themoviedb.org/3/search/movie?query=${moviePrompt}&include_adult=false&language=en-US&page=1`, options)
+    let data = await response.json()
+
+ console.log(data.results[0])
+
+  console.log(data, "inside movie api");
+  dispatch(addCharacters(data.results[0]))
+ 
 
   
 }
@@ -66,7 +74,8 @@ const handleSearch = async (e) => {
 </div>
 
 </form>
-
+https://www.themoviedb.org/t/p/w220_and_h330_face/mFvoEwSfLqbcWwFsDjQebn9bzFe.jpg
+https://www.themoviedb.org/t/p/w220_and_h330_face/mtEGkVB38MfuWxaC5FvUWLiGh9R.jpg
 
 <br /> 
 
@@ -77,16 +86,16 @@ const handleSearch = async (e) => {
         <Card  >
           <Card.Content>
             
-            <img style={{height:"13em"}} src={characters.Poster} alt=""/>
+            <img style={{height:"13em"}} src={`https://www.themoviedb.org/t/p/w220_and_h330_face${characters.poster_path}`} alt=""/>
 
           </Card.Content>
           <Card.Content>
-            <Card.Header>{characters.Title}
+            <Card.Header>{characters.title}
             </Card.Header>
             <Card.Meta>
-                <span className='date'>{characters.Released}</span>
+                <span className='date'>{characters.release_date}</span>
             </Card.Meta>
-            <Card.Description>{characters.Plot}
+            <Card.Description>{characters.overview}
             </Card.Description>
            </Card.Content>
         </Card>
