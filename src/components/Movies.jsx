@@ -74,8 +74,7 @@ let response = await  fetch(`https://api.themoviedb.org/3/search/movie?query=${m
 </div>
 
 </form>
-https://www.themoviedb.org/t/p/w220_and_h330_face/mFvoEwSfLqbcWwFsDjQebn9bzFe.jpg
-https://www.themoviedb.org/t/p/w220_and_h330_face/mtEGkVB38MfuWxaC5FvUWLiGh9R.jpg
+
 
 <br /> 
 
