@@ -1,70 +1,37 @@
-# Getting Started with Create React App
+# Between The Ears
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![Alt text](src/assets/img/earsIcon.png)
 
-## Available Scripts
+## About the Project
 
-In the project directory, you can run:
+This project came about from an individual assignment. We were to make a application that used React and Redux. The idea came organically from my experiences and the told experiences of others. My family and were planning a Disney trip and this will be the first trip for my 3 year old. It occured to me that Disney can be an overwhelming experience and a trip of new experiences like planes rides, hotel stays and security. As a Speech Pathologist I treated and supported many students that would also struggle to regulate in such a trip. In looking for resources to prepare my 3 year old I realized there was a lack of resources that were centralized. Thus came my application Between the Ears. This is a site for young children and the neurodiverse to prepare for a trip. 
 
-### `npm start`
+## Built With
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+* React
+* Redux
+* JavaScript
+* CSS
+* Semantic UI
+* OpenAI
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Usage
 
-### `npm test`
+To use the site you simply navigate to the page of interest. It allows you to plan a movie night with a search and recipe search:
+![Alt text](src/assets/img/movieNight.png)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+![Alt text](src/assets/img/recipe.png)
 
-### `npm run build`
+ categorize and search through possible rides, a POV video of the ride so there are no surprises:
+ 
+ ![Alt text](src/assets/img/rides.png)
+ 
+ 
+  and a social skills page with lots of social stories, songs, and read aloud books.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+![Alt text](src/assets/img/socialSkills.png)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Learnings and Challenges
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This was a project that was start to finish my concept and work with alot more freedom in our creation. I learned that I really enjoy the creative process and it makes it much easier to work when it is about a project you are passionate about. Inclusivity is a passion of mine and I have already heard such positive feedback from my resources I have gathered. Challenges would definetly be the responsiveness. Unfortunately I did not remember to make this site responsive until after the project was complete. While it ended well it was stress that taught me to plan for responsivness from the beginning.
